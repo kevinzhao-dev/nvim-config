@@ -1,0 +1,26 @@
+# .gitignore for Neovim configuration (~/.config/nvim/)
+
+# macOS specific
+.DS_Store
+
+# Vim/Neovim swap and backup files (although disabled in options)
+*.swp
+*.swo
+*~
+*.bak
+
+# Undo history directory (if created inside .config/nvim)
+undodir/
+
+# Log files
+*.log
+
+# Data/state directories sometimes created by plugins (check defaults)
+# Note: lazy.nvim installs plugins OUTSIDE .config/nvim by default
+# so node_modules etc. shouldn't appear here unless you configured differently.
+# data/
+# .local/
+
+# Python virtual environments often created for specific plugins
+venv/
+.venv/
