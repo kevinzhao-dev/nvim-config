@@ -67,7 +67,6 @@ return {
         })
         -- vim.diagnostic.config({ virtual_text = true }) -- Enable virtual text diagnostics
 
-        print("LSP and Completion setup complete with lsp-zero.")
     end
   },
 }

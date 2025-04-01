@@ -71,7 +71,6 @@ return {
           },
         },
       })
-      print("Treesitter setup complete.")
     end,
   },
 }
