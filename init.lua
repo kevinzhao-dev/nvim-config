@@ -37,5 +37,4 @@ require('lazy').setup('plugins', {
   -- performance = { ... }
 })
 
-print("Neovim configuration loaded successfully!")
 

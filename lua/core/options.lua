@@ -46,5 +46,4 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.writebackup = false
 
-print("Core options loaded.")
 -- No need to return anything from this file
