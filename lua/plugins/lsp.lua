@@ -36,7 +36,7 @@ return {
         -- Setup Mason and Mason-LSPConfig to install servers
         require('mason').setup({})
         require('mason-lspconfig').setup({
-            ensure_installed = {'clangd', 'lua_ls'}, -- ** Add C++ (clangd) and other LSPs here **
+            ensure_installed = {'clangd', 'lua_ls', 'rust_analyzer'}, -- ** Add C++, Lua, Rust LSPs here **
             handlers = {
                 lsp_zero.default_setup_servers, -- Use lsp-zero's handler
                 -- You can add custom setup for specific servers if needed
