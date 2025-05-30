@@ -1,6 +1,10 @@
 -- ~/.config/nvim/lua/plugins/rust.lua
 -- Rust-specific configuration: rust-tools for enhanced Rust support
 
+local cmp_nvim_lsp = require 'cmp_nvim_lsp'
+local capabilities = cmp_nvim_lsp.default_capabilities()
+capabilities.textDocument.completion.completionItem.insertReplaceSupport = false
+
 return {
   {
     "simrat39/rust-tools.nvim",
@@ -21,6 +25,7 @@ return {
         },
       },
       server = {
+        capabilities = capabilities,
         settings = {
           ["rust-analyzer"] = {
             cargo = { allFeatures = true },
